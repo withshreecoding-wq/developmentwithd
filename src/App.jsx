@@ -68,7 +68,7 @@ function App() {
   const [showWelcome, setShowWelcome] = useState(true);
 
   return (
-    <BrowserRouter basename="/myportfolio/">
+    <BrowserRouter basename="/developmentwithd/">
       <Routes>
         <Route path="/" element={<LandingPage showWelcome={showWelcome} setShowWelcome={setShowWelcome} />} />
         <Route path="/about" element={<About />} />
