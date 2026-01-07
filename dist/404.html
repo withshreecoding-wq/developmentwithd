@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <script>
-      (function () {
-        var base = "/developmentwithd/";
-        var path = location.pathname;
-        var normalized = path.startsWith(base)
-          ? path.slice(base.length)
-          : path.replace(/^\\//, "");
-        var target = base + normalized + location.search + location.hash;
-        location.replace(target);
-      })();
-    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./Photo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-End Web</title>
   </head>
-  <body></body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
 </html>
