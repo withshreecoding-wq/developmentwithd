@@ -68,13 +68,11 @@ function App() {
   const [showWelcome, setShowWelcome] = useState(true);
 
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<LandingPage showWelcome={showWelcome} setShowWelcome={setShowWelcome} />} />
         <Route path="/about" element={<About />} />
         <Route path="/project/:id" element={<ProjectPageLayout />} />
       </Routes>
-    </BrowserRouter>
   );
 }
 
